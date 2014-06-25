@@ -38,7 +38,6 @@
 		this.makeFrame();
 		this.configPhotos();
 		this.addListeners();
-		this.applyCss();
 	};
 
 	Gallery.prototype.makeFrame = function() {
@@ -113,21 +112,6 @@
 		this.innerFrame.innerHTML = "";
 		this.innerFrame.appendChild(newImg);
 	};
-
-	Gallery.prototype.applyCss = function() {
-		var style = document.createElement("style");
-		style.type = 'text/css';
-		document.head.appendChild(style);
-
-	    var sheet = document.styleSheets[0];
-	    sheet.addRule('.photo_widget', 'height: 300px; width: 300px; margin-left: auto; margin-right: auto; border: 5px solid black; border-radius: 5px;')
-	    sheet.addRule('.mode_filmstrip', 'height: 420px;')
-	    sheet.addRule('.mode_single', 'cursor: pointer')
-	    sheet.addRule('.frame', 'height: 300px; width: 300px; background-color: black;');
-	    sheet.addRule('.inner-frame', 'height: 100%; width: 100%; overflow: hidden');
-	    sheet.addRule('.filmstrip img', 'height: 100px; width: auto; display: inline-block; border: 3px solid black;')
-	    sheet.addRule('.filmstrip', 'height: 120px; width: 100%; overflow-x: scroll; overflow-y: hidden; background-color: black; white-space: nowrap; cursor: pointer;')
-		};
 
 	Gallery.init();
 

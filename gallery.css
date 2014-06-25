@@ -1,0 +1,50 @@
+.photo_widget{
+	height: 400px; 
+	width: 400px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	border: 5px solid black; 
+	border-radius: 5px;
+}
+
+.mode_filmstrip {
+	height: 500px;
+}
+
+.mode_single {
+	cursor: pointer;
+}
+
+.frame{
+	height: 400px; 
+	width: 400px; 
+	background-color: black;
+}
+
+.inner-frame{
+	height: 100%; 
+	width: 100%; 
+	overflow: hidden;
+}
+
+.inner-frame img{
+	height: 400px;
+	width: 400px;
+}
+
+.filmstrip img {
+	height: 100px; 
+	width: auto; 
+	display: inline-block; 
+	border: 3px solid black;
+}
+
+.filmstrip{
+	height: 100px; 
+	width: 100%; 
+	overflow-x: scroll; 
+	overflow-y: hidden; 
+	background-color: black; 
+	white-space: nowrap; 
+	cursor: pointer;
+}
